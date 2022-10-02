@@ -6,8 +6,19 @@ public class Floristeria {
     private String nom;
     private List<Arbre> arbres;
     private List<Flor> flors;
-    private Decoracio decoracio;
-    private float preu;
+    private List<Decoracio> decoracions;
+    private float preuTotalStock;
+
+    public Floristeria() {
+    }
+
+    public Floristeria(String nom, List<Arbre> arbres, List<Flor> flors, List<Decoracio> decoracions, float preuTotalStock) {
+        this.nom = nom;
+        this.arbres = arbres;
+        this.flors = flors;
+        this.decoracions = decoracions;
+        this.preuTotalStock = preuTotalStock;
+    }
 
     public String getNom() {
         return nom;
@@ -33,20 +44,20 @@ public class Floristeria {
         this.flors = flors;
     }
 
-    public Decoracio getDecoracio() {
-        return decoracio;
+    public List<Decoracio> getDecoracions() {
+        return decoracions;
     }
 
-    public void setDecoracio(Decoracio decoracio) {
-        this.decoracio = decoracio;
+    public void setDecoracions(List<Decoracio> decoracions) {
+        this.decoracions = decoracions;
     }
 
-    public float getPreu() {
-        return preu;
+    public float getPreuTotalStock() {
+        return preuTotalStock;
     }
 
-    public void setPreu(float preu) {
-        this.preu = preu;
+    public void setPreuTotalStock(float preuTotalStock) {
+        this.preuTotalStock = preuTotalStock;
     }
 
     @Override
@@ -55,8 +66,8 @@ public class Floristeria {
                 "nom='" + nom + '\'' +
                 ", arbres=" + arbres +
                 ", flors=" + flors +
-                ", decoracio=" + decoracio +
-                ", preu=" + preu +
+                ", decoracions=" + decoracions +
+                ", preuTotalStock=" + preuTotalStock +
                 '}';
     }
 }
