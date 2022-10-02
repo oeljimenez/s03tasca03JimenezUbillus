@@ -1,8 +1,9 @@
 package it.academy.java.sprint3.tasca3.n1exercisi1;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Floristeria {
+public class Floristeria implements Serializable {
     private String nom;
     private List<Arbre> arbres;
     private List<Flor> flors;

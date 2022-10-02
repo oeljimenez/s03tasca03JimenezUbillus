@@ -1,16 +1,18 @@
 package it.academy.java.sprint3.tasca3.n1exercisi1;
 
-public class Arbre {
+import java.io.Serializable;
+
+public class Arbre implements Serializable {
     private String nom;
-    private float alçada;
+    private float alcada;
     private float preu;
 
     public Arbre() {
     }
 
-    public Arbre(String nom, float alçada, float preu) {
+    public Arbre(String nom, float alcada, float preu) {
         this.nom = nom;
-        this.alçada = alçada;
+        this.alcada = alcada;
         this.preu = preu;
     }
 
@@ -22,12 +24,12 @@ public class Arbre {
         this.nom = nom;
     }
 
-    public float getAlçada() {
-        return alçada;
+    public float getAlcada() {
+        return alcada;
     }
 
-    public void setAlçada(float alçada) {
-        this.alçada = alçada;
+    public void setAlcada(float alcada) {
+        this.alcada = alcada;
     }
 
     public float getPreu() {
@@ -42,7 +44,7 @@ public class Arbre {
     public String toString() {
         return "Arbre{" +
                 "nom='" + nom + '\'' +
-                ", alçada=" + alçada +
+                ", alcada=" + alcada +
                 ", preu=" + preu +
                 '}';
     }
